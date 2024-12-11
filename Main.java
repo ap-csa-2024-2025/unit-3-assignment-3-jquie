@@ -5,7 +5,7 @@ public class Main
   public static void main(String[] args)
   {
     Scanner sc = new Scanner(System.in);
-    // TODO: Problem 1
+    // TODO: Problem 1 
     double num1 = sc.nextDouble();
     double num2 = sc.nextDouble();
     if (num2 == 0)
@@ -44,16 +44,29 @@ public class Main
     }
 
     // TODO: Problem 3
-  }
+    int num = sc.nextInt();
+    if (50 <= num && num <= 59)
+    {
+      System.out.println("Your number is " + num);
+    }
+    else
+    {
+      System.out.println("That's not in the fifties!");
+      num = 55;
+      System.out.println("Your number is " + num);
+    }
 
-  // TODO: In-class assignment
-  // Create a method that takes in two Rectangles and returns
-  // true if they are equal, and false otherwise.  Two
-  // Rectangles are considered equal if their widths are equal,
-  // and if their lengths are equal.
-  public static boolean rectEqual(Rectangle r1, Rectangle r2)
-  {
-    // implement solution here
-    return false;
+    // TODO: Problem 4
+    int y = sc.nextInt();
+    int x = sc.nextInt();
+    if (!(y > 9) || (!(x<= 2) && (x*y > 10)))
+    {
+      System.out.println("pass");
+    }
+    else
+    {
+      System.out.println("fail");
+    }
+
   }
 }
